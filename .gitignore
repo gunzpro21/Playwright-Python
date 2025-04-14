@@ -1,0 +1,16 @@
+# IDE settings
+.idea/
+# Python virtual environment
+.venv/
+# Compiled Python files
+__pycache__/
+# pytest cache
+.pytest_cache/
+# Test reports
+reports/
+# Temporary archives
+archive/
+# MacOS system files
+.DS_Store
+# Log files
+*.log
