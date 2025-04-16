@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import APIRequestContext
 from apis.clients.user_client import UserClient
-from apis.clients.dept_client import DeptClient
+from apis.clients.login_client import LoginClient
 from faker import Faker
 
 # try this class to remove api_fixture
@@ -17,8 +17,8 @@ def user_client(api_request) -> UserClient:
     return UserClient(api_request)
 
 @pytest.fixture
-def dept_client(api_request):
-    return DeptClient(api_request)
+def login_client(api_request):
+    return LoginClient(api_request)
 
 @pytest.fixture
 def fake() -> Faker:
